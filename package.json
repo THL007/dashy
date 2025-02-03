@@ -26,6 +26,10 @@
     "axios": "^1.6.0",
     "connect-history-api-fallback": "^1.6.0",
     "crypto-js": "^4.2.0",
+    "eslint-plugin-import": "2",
+    "eslint-plugin-jsx-a11y": "6",
+    "eslint-plugin-react": "7",
+    "eslint-plugin-react-hooks": "4",
     "express": "^4.17.2",
     "express-basic-auth": "^1.2.1",
     "frappe-charts": "^1.6.2",
@@ -49,7 +53,8 @@
     "vue-select": "^3.20.2",
     "vue-swatches": "^2.1.1",
     "vue-toasted": "^1.1.28",
-    "vuex": "^3.6.2"
+    "vuex": "^3.6.2",
+    "webpack": "4"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.17.10",
