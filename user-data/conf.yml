@@ -12,6 +12,11 @@ pageInfo:
 # Optional app settings and configuration
 appConfig:
   theme: colorful
+  auth:
+    users:
+    - user: th
+      hash: 2f6028a6d9d6f75c8a08eafb62e82fc9ff2aab375ac11afe9ab7be32f8d20ef2
+      type: admin
 
 # Main content - An array of sections, each containing an array of items
 sections:
