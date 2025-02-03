@@ -17,11 +17,11 @@
     "dependency-audit": "npx improved-yarn-audit --ignore-dev-deps"
   },
   "dependencies": {
-    "@vue/cli-service": "^5.0.8",
     "@babel/core": "^7.0.0",
     "@formschema/native": "^2.0.0-beta.6",
     "@sentry/tracing": "^7.102.1",
     "@sentry/vue": "^7.102.1",
+    "@vue/cli-service": "4.5.19",
     "ajv": "^8.10.0",
     "axios": "^1.6.0",
     "connect-history-api-fallback": "^1.6.0",
