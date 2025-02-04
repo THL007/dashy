@@ -21,7 +21,6 @@
     "@formschema/native": "^2.0.0-beta.6",
     "@sentry/tracing": "^7.102.1",
     "@sentry/vue": "^7.102.1",
-    "@vercel/speed-insights": "^1.1.0",
     "@vue/cli-service": "4.5.19",
     "ajv": "^8.10.0",
     "axios": "^1.6.0",

@@ -10,7 +10,6 @@
 </template>
 <script>
 
-import { SpeedInsights } from "@vercel/speed-insights/vue"
 import Header from '@/components/PageStrcture/Header.vue';
 import Footer from '@/components/PageStrcture/Footer.vue';
 import EditModeTopBanner from '@/components/InteractiveEditor/EditModeTopBanner.vue';
