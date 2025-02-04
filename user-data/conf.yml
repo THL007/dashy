@@ -51,9 +51,6 @@ sections:
     icon: far fa-hands-helping
   
 
-
-  # Main content - An array of sections, each containing an array of items
-sections:
 - name: Projects
   icon: fas fa-rocket
   items:
