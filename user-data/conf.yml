@@ -3,11 +3,11 @@
 pageInfo:
   title: Dashy
   description: Welcome to your new dashboard!
-  navLinks:
-  - title: GitHub
-    path: https://github.com/Lissy93/dashy
-  - title: Documentation
-    path: https://dashy.to/docs
+  # navLinks:
+  # - title: GitHub
+  #   path: https://github.com/Lissy93/dashy
+  # - title: Documentation
+  #   path: https://dashy.to/docs
 
 # Optional app settings and configuration
 appConfig:
@@ -50,3 +50,36 @@ sections:
     url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
     icon: far fa-hands-helping
   
+
+
+  # Main content - An array of sections, each containing an array of items
+sections:
+- name: Projects
+  icon: fas fa-rocket
+  items:
+  - title: Nantia
+    description: Develope an AI language learning platform
+    # icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
+    # url: https://live.dashy.to/
+    target: newtab
+  - title: 1Xbot
+    description: A betting bot for 1xbet used for investments
+    # url: https://github.com/lissy93/dashy
+    # icon: favicon
+  - title: Sol-Snipper
+    description: A CLI snipping bot for meme coins written in golang
+    # provider: Dashy.to
+    # icon: far fa-book
+    # url: https://dashy.to/docs
+  - title: BUUY MV
+    description: A Media buy/sell platform 
+    # url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
+    # icon: far fa-grin-hearts
+  # - title: Config Guide
+  #   description: See full list of configuration options
+  #   url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
+  #   icon: fas fa-wrench
+  # - title: Support
+  #   description: Get help with Dashy, raise a bug, or get in contact
+  #   url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
+  #   icon: far fa-hands-helping
