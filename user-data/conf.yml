@@ -1,82 +1,104 @@
 ---
-# Page meta info, like heading, footer text and nav links
 pageInfo:
-  title: Dashy
-  description: Welcome to your new dashboard!
-  # navLinks:
-  # - title: GitHub
-  #   path: https://github.com/Lissy93/dashy
-  # - title: Documentation
-  #   path: https://dashy.to/docs
+  title: "My Dashboard"
+  description: "Track my current projects, tools, websites, and more."
+  logo: "https://example.com/logo.png"    # Replace with your logo URL
+  navLinks:
+    - title: "GitHub"
+      path: "https://github.com/myusername"
+    - title: "Docs"
+      path: "https://docs.example.com"
 
-# Optional app settings and configuration
 appConfig:
-  theme: colorful
-  auth:
-    users:
-    - user: th
-      hash: 2f6028a6d9d6f75c8a08eafb62e82fc9ff2aab375ac11afe9ab7be32f8d20ef2
-      type: admin
+  theme: "dark"             # Choose your theme (or use one of the built-in options)
+  statusCheck: true         # Enable status checking if desired
+  statusCheckInterval: 10   # Check every 10 seconds
+  searchEngine: "duckduckgo"
 
-# Main content - An array of sections, each containing an array of items
 sections:
-- name: Getting Started
-  icon: fas fa-rocket
-  items:
-  - title: Dashy Live
-    description: Development a project management links for Dashy
-    icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    url: https://live.dashy.to/
-    target: newtab
-  - title: GitHub
-    description: Source Code, Issues and Pull Requests
-    url: https://github.com/lissy93/dashy
-    icon: favicon
-  - title: Docs
-    description: Configuring & Usage Documentation
-    provider: Dashy.to
-    icon: far fa-book
-    url: https://dashy.to/docs
-  - title: Showcase
-    description: See how others are using Dashy
-    url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    icon: far fa-grin-hearts
-  - title: Config Guide
-    description: See full list of configuration options
-    url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-    icon: fas fa-wrench
-  - title: Support
-    description: Get help with Dashy, raise a bug, or get in contact
-    url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-    icon: far fa-hands-helping
-  
+  - name: "Projects"
+    icon: "fas fa-rocket"
+    displayData:
+      itemSize: medium
+      cols: 3
+    items:
+      - title: "Project Alpha"
+        icon: "fas fa-project-diagram"
+        description: "Developing feature A and fixing bugs."
+        url: "https://github.com/myusername/project-alpha"
+        hotkey: 1
+      - title: "Project Beta"
+        icon: "fas fa-code"
+        description: "Working on a new module."
+        url: "https://github.com/myusername/project-beta"
+        hotkey: 2
+      - title: "Project Gamma"
+        icon: "fas fa-cogs"
+        description: "Maintaining infrastructure."
+        url: "https://github.com/myusername/project-gamma"
+        hotkey: 3
 
-- name: Projects
-  icon: fas fa-rocket
-  items:
-  - title: Nantia
-    description: Develope an AI language learning platform
-    # icon: https://i.ibb.co/qWWpD0v/astro-dab-128.png
-    # url: https://live.dashy.to/
-    target: newtab
-  - title: 1Xbot
-    description: A betting bot for 1xbet used for investments
-    # url: https://github.com/lissy93/dashy
-    # icon: favicon
-  - title: Sol-Snipper
-    description: A CLI snipping bot for meme coins written in golang
-    # provider: Dashy.to
-    # icon: far fa-book
-    # url: https://dashy.to/docs
-  - title: BUUY MV
-    description: A Media buy/sell platform 
-    # url: https://github.com/Lissy93/dashy/blob/master/docs/showcase.md
-    # icon: far fa-grin-hearts
-  # - title: Config Guide
-  #   description: See full list of configuration options
-  #   url: https://github.com/Lissy93/dashy/blob/master/docs/configuring.md
-  #   icon: fas fa-wrench
-  # - title: Support
-  #   description: Get help with Dashy, raise a bug, or get in contact
-  #   url: https://github.com/Lissy93/dashy/blob/master/.github/SUPPORT.md
-  #   icon: far fa-hands-helping
+  - name: "Tools & Software"
+    icon: "fas fa-tools"
+    displayData:
+      itemSize: medium
+      cols: 3
+    items:
+      - title: "VS Code"
+        icon: "https://code.visualstudio.com/favicon.ico"
+        description: "My primary code editor."
+        url: "https://code.visualstudio.com/"
+      - title: "Docker"
+        icon: "https://www.docker.com/sites/default/files/d8/2019-07/Moby-logo.png"
+        description: "Containerization platform."
+        url: "https://www.docker.com/"
+      - title: "Postman"
+        icon: "https://www.postman.com/assets/logos/postman-logo-stacked.svg"
+        description: "API testing tool."
+        url: "https://www.postman.com/"
+      - title: "Notion"
+        icon: "https://www.notion.so/cdn-cgi/image/format=auto,width=120,quality=75/front-static/shared/img/favicon.png"
+        description: "Project documentation & notes."
+        url: "https://www.notion.so/"
+      - title: "Slack"
+        icon: "https://a.slack-edge.com/80588/marketing/img/meta/favicon-32.png"
+        description: "Team communication."
+        url: "https://slack.com/"
+
+  - name: "Websites & Services"
+    icon: "fas fa-globe"
+    displayData:
+      itemSize: medium
+      cols: 3
+    items:
+      - title: "My Portfolio"
+        icon: "fas fa-user"
+        description: "Personal portfolio website."
+        url: "https://myportfolio.com/"
+      - title: "Blog"
+        icon: "fas fa-blog"
+        description: "My tech blog."
+        url: "https://blog.mywebsite.com/"
+      - title: "Email"
+        icon: "fas fa-envelope"
+        description: "Access my email account."
+        url: "https://mail.myprovider.com/"
+
+  - name: "Widgets"
+    icon: "fas fa-th"
+    displayData:
+      itemSize: small
+    widgets:
+      - type: "clock"
+        options:
+          timeZone: "America/New_York"
+          hideSeconds: true
+      - type: "weather"
+        options:
+          city: "New York"
+          apiKey: "YOUR_WEATHER_API_KEY"    # Replace with your weather API key
+      - type: "joke"
+        options:
+          language: "en"
+          category: "programming"
+          safeMode: true
